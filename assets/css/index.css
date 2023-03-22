@@ -58,7 +58,7 @@ header nav ul li a:hover{
 header .content{
     position: relative;
     width:100%;
-    height: 80%;
+    height: 93%;
     border: 1px solid black;
 }
 
@@ -85,22 +85,6 @@ header .content .cont_box h1{
     font-weight: 900;
 }
 
-header .content .cont_box button{
-    margin-top:1.25rem ;
-    border-radius: 1.25rem;
-    padding: 0.8rem 1.25rem;
-    outline: none;
-    cursor: pointer;
-    transition: .3s linear;
-    background:#e2e2e2;
-    color: black;
-}
-
-header .content .cont_box button:hover{
-    background: #101a35;
-    color: white;
-}
-
 header .viagem{
     position: relative;
     width: 95%;
@@ -108,17 +92,88 @@ header .viagem{
     margin: auto;
 }
 
-header .viagem .pesquisa{
+header .viagem .pesquisa_box{
     position: absolute;
     top: 0;
     left: 0;
-    width: 60%;
+    width:57%;
     height: 3.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    border: 3px ;
+    border-radius: 5px ;
     box-shadow: 0px 10px 21px gray;
+    z-index: 1;
+    padding: 0px 1.25rem;
 }
+
+/* header .viagem .viagem_box .card {
+    width: 200px;
+    height: 100%;
+}
+
+header .viagem .viagem_box .card h4 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header .viagem .viagem_box .card h4 .bi {
+    position: absolute;
+    font-size: 0.9rem;
+    margin: 3px 1px 2px 5px;
+    transition:  .3s linear;
+}
+
+header .viagem .viagem_box .card input {
+    margin-top: 3px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+} */
+
+header .viagem .viagem_box input[type="button"] {
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding:0.7rem 1.5rem ;
+    border-radius:1.25rem ;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+header .viagem .viagem_box input[type="button"]:hover {
+    background: #8ea9ff;
+    color: white;
+}
+
+header .viagem .destaque{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    top: 3rem;
+    background: black;
+    border: 1px solid black;
+    border-radius: 10px ;
+    padding-bottom: 1.25rem;
+    box-shadow: 0px 20px 25px -10px black;
+}
+
+header .viagem .destaque::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    backdrop-filter: blur(5px);
+}
+
+
+
+
 
